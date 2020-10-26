@@ -1,0 +1,16 @@
+D:\Dev\C#\Calculator\bin\Debug\WPFInterface.exe.config
+D:\Dev\C#\Calculator\bin\Debug\WPFInterface.exe
+D:\Dev\C#\Calculator\bin\Debug\WPFInterface.pdb
+D:\Dev\C#\Calculator\bin\Debug\Documentation.xml
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\WPFInterface.csprojAssemblyReference.cache
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\MainWindow.g.cs
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\App.g.cs
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\WPFInterface_MarkupCompile.cache
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\WPFInterface_MarkupCompile.lref
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\MainWindow.baml
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\WPFInterface.g.resources
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\WPFInterface.Properties.Resources.resources
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\WPFInterface.csproj.GenerateResource.cache
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\WPFInterface.csproj.CoreCompileInputs.cache
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\WPFInterface.exe
+D:\Dev\C#\Calculator\WPFInterface\obj\Debug\WPFInterface.pdb

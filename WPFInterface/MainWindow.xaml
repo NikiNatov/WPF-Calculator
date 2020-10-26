@@ -1,0 +1,92 @@
+﻿<Window x:Class="WPFInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFInterface"
+        mc:Ignorable="d"
+        Title="Calculator" Height="720" Width="480" FontFamily="Segoe UI Semibold">
+
+    <Grid>
+        <!--Columns-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--Rows-->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--Text Box-->
+        <TextBlock  Name="TxtOutput" Padding="0, 30, 10, 0" Background="LightGray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" TextAlignment="Right" FontSize="20"  FontWeight="Normal"/>
+        <TextBox    Name="TxtInput"  Padding="0, 0, 10, 0"  Background="LightGray" IsReadOnly="True" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" Text="0" TextAlignment="Right" BorderThickness="0" FontSize="32"  FontWeight="Bold"/>
+        <!--Number buttons-->
+        <Button Name="Btn7"         Background="White"  Grid.Row="4" Grid.Column="2" Content="7"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="Btn8"         Background="White"  Grid.Row="4" Grid.Column="3" Content="8"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="Btn9"         Background="White"  Grid.Row="4" Grid.Column="4" Content="9"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="Btn4"         Background="White"  Grid.Row="5" Grid.Column="2" Content="4"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="Btn5"         Background="White"  Grid.Row="5" Grid.Column="3" Content="5"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="Btn6"         Background="White"  Grid.Row="5" Grid.Column="4" Content="6"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="Btn1"         Background="White"  Grid.Row="6" Grid.Column="2" Content="1"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="Btn2"         Background="White"  Grid.Row="6" Grid.Column="3" Content="2"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="Btn3"         Background="White"  Grid.Row="6" Grid.Column="4" Content="3"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="Btn0"         Background="White"  Grid.Row="7" Grid.Column="3" Content="0"        FontSize="18" Click="Btn_Click"/>
+        <Button Name="BtnNegate"    Background="White"  Grid.Row="7" Grid.Column="2" Content="+/-"      FontSize="18" Click="BtnNegate_Click"/>
+        <Button Name="BtnComma"     Background="White"  Grid.Row="7" Grid.Column="4" Content=","        FontSize="18" Click="Btn_Click"/>
+
+        <!--Function Buttons-->
+        <Button Name="BtnSin"       Grid.Row="2" Grid.Column="0" Content="sin"     FontSize="18" FontStyle="Italic" Click="BtnSin_Click"/>
+        <Button Name="BtnCos"       Grid.Row="3" Grid.Column="0" Content="cos"     FontSize="18" FontStyle="Italic" Click="BtnCos_Click"/>
+        <Button Name="BtnTg"        Grid.Row="4" Grid.Column="0" Content="tg"      FontSize="18" FontStyle="Italic" Click="BtnTg_Click"/>
+        <Button Name="BtnCotg"      Grid.Row="5" Grid.Column="0" Content="cotg"    FontSize="18" FontStyle="Italic" Click="BtnCotg_Click"/>
+        <Button Name="BtnSec"       Grid.Row="6" Grid.Column="0" Content="sec"     FontSize="18" FontStyle="Italic" Click="BtnSec_Click"/>
+        <Button Name="BtnCosec"     Grid.Row="7" Grid.Column="0" Content="cosec"   FontSize="18" FontStyle="Italic" Click="BtnCosec_Click"/>
+        <Button Name="BtnLn"        Grid.Row="7" Grid.Column="1" Content="ln"      FontSize="18" FontStyle="Italic" Click="BtnLn_Click"/>
+        <Button Name="BtnLog"       Grid.Row="6" Grid.Column="1" Content="log"     FontSize="18" FontStyle="Italic" Click="BtnLog_Click"/>
+        <Button Name="BtnTenToX" Grid.Row="5" Grid.Column="1" Click="BtnTenToX_Click">
+            <TextBlock>
+                <Run FontSize="18" FontStyle="Italic">10</Run>
+                <Run FontSize="12" FontStyle="Italic" BaselineAlignment="TextTop">x</Run>
+            </TextBlock>
+        </Button>
+        <Button Name="BtnExp"       Grid.Row="4" Grid.Column="1" Content="exp"      FontSize="18" FontStyle="Italic" Click="BtnOperation_Click"/>
+        <Button Name="BtnSqrt"      Grid.Row="3" Grid.Column="1" Content="&#8730;x" FontSize="18" FontStyle="Italic" Click="BtnSqrt_Click"/>
+        <Button Name="BtnSquare"    Grid.Row="2" Grid.Column="1" Click="BtnSquare_Click">
+            <TextBlock>
+                <Run FontSize="18" FontStyle="Italic">x</Run>
+                <Run FontSize="12" FontStyle="Italic" BaselineAlignment="TextTop">2</Run>
+            </TextBlock>
+        </Button>
+        <Button Name="BtnOneOverX"  Grid.Row="3" Grid.Column="2" Content="1/x"  FontSize="18" FontStyle="Italic" Click="BtnOneOverX_Click"/>
+        <Button Name="BtnAbs"       Grid.Row="3" Grid.Column="3" Content="|x|"  FontSize="18" FontStyle="Italic" Click="BtnAbs_Click"/>
+
+        <!--Special Constants-->
+        <Button Name="BtnPI" Grid.Row="2" Grid.Column="2" Content="&#960;"  FontSize="18" FontStyle="Italic" Click="BtnPI_Click"/>
+        <Button Name="BtnE"  Grid.Row="2" Grid.Column="3" Content="e"       FontSize="18" FontStyle="Italic" Click="BtnE_Click"/>
+
+        <!--Clear Buttons-->
+        <Button Name="BtnClear"     Grid.Row="2" Grid.Column="4" Content="C"      FontSize="18" Click="BtnClear_Click"/>
+        <Button Name="BtnClearAll"  Grid.Row="3" Grid.Column="4" Content="C/A"    FontSize="18" Click="BtnClearAll_Click"/>
+        <Button Name="BtnBackspace" Grid.Row="2" Grid.Column="5" Content="&lt;="  FontSize="18" Click="BtnBackspace_Click"/>
+
+        <!--Operation Buttons-->
+        <Button Name="BtnDivide"    Background="LightSkyBlue"   Grid.Row="3" Grid.Column="5" Content="/"    FontSize="18" Click="BtnOperation_Click"/>
+        <Button Name="BtnMultiply"  Background="LightSkyBlue"   Grid.Row="4" Grid.Column="5" Content="*"    FontSize="18" Click="BtnOperation_Click"/>
+        <Button Name="BtnSubtract"  Background="LightSkyBlue"   Grid.Row="5" Grid.Column="5" Content="-"    FontSize="18" Click="BtnOperation_Click"/>
+        <Button Name="BtnAdd"       Background="LightSkyBlue"   Grid.Row="6" Grid.Column="5" Content="+"    FontSize="18" Click="BtnOperation_Click"/>
+        <Button Name="BtnEquals"    Background="LightGreen"   Grid.Row="7" Grid.Column="5" Content="="      FontSize="18" Click="BtnEquals_Click"/>
+
+    </Grid>
+</Window>

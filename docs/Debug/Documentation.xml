@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WPFInterface</name>
+    </assembly>
+    <members>
+        <member name="T:WPFInterface.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:WPFInterface.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:WPFInterface.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:WPFInterface.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:WPFInterface.MainWindow.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:WPFInterface.MainWindow.Btn_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Function for all number buttons including the ","
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnNegate_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Function for "+/-" button
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnEquals_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Fuction for button "="
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnOperation_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Function for all operation buttons including "exp"
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnPI_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Function for the PI constant
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnE_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Function for the Euler constant
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnLn_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Natural Logarithm Function: ln(x)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnLog_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Base 10 Logarithm Function: log(x)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnCosec_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Cosecant Function: cosec(x)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnSec_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Secant Function: sec(x)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnCotg_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Cotangent Function: cotg(x)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnTg_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Tangent Function: tg(x)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnCos_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Cosine Function: cos(x)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnSin_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Sine Function: sin(x)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnTenToX_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ten to the Power of X Function: 10^x
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnSqrt_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Square Root Function: x^(1/2)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnSquare_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            X Squared Function: x^2
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnOneOverX_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            One Over X Function: 1/x
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnAbs_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Absolute Value Function: |x|
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnClear_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Clear Current Entry
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnClearAll_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Clear All Entries
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.BtnBackspace_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Clear Last Digit
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WPFInterface.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WPFInterface.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:WPFInterface.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:WPFInterface.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
